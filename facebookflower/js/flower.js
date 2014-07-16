@@ -10,7 +10,7 @@ var maxrecentintimacy,
 $.ajaxSetup({
     async: false
 });
-$.getJSON( "/data/yuzuru_result.json", function( response ) {
+$.getJSON( "/facebookflower/data/yuzuru_result.json", function( response ) {
   yearlist = response.yearlist
   data = response.data
   maxrecentintimacy = response.maxrecentintimacy
