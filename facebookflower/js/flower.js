@@ -10,7 +10,7 @@ var maxrecentintimacy,
 $.ajaxSetup({
     async: false
 });
-$.getJSON( "data/mars_result.json", function( response ) {
+$.getJSON( "data/yuzuru_result.json", function( response ) {
   yearlist = response.yearlist
   data = response.data
   maxrecentintimacy = response.maxrecentintimacy
@@ -488,6 +488,7 @@ petal.append("polygon")
         return petalPointList[i]
     })
      .attr("fill", function(d, i){
+        if(!d.approved) return "black"
         var url
         if(d.type=="stranger") url = "stranger"
         else url = d.type + colorindex(prelight(d.recentIntimacy))
@@ -502,6 +503,7 @@ petal.append("polygon")
     })
 
 var stamencolor = function(d){
+        if(!d.approved) return "black"
   var l = light(prelight(d.recentIntimacy))
   if (d.type=="stranger") return "white"
   else return d3.hsl(colorlist[d.type][0], colorlist[d.type][1], l*stamenbrightRatio)
