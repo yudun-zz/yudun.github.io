@@ -1,0 +1,5 @@
+*{font-family:"Microsoft YaHei",Times,serif}.center{display:block;margin-left:auto;margin-right:auto;text-align:center}textarea{resize:none}
+hr{margin-bottom:15px}.label{padding:.5em 1em .5em;font-size:90%;border-radius:1em}@font-face{font-family:'dacquoise';src:url('font/dacquoise.regular.ttf') format('truetype')}
+#title span{font-family:'dacquoise';font-size:170%;font-weight:normal}.down{margin-top:20px}#draw{margin-top:10px}#cy{height:331px;background-color:#faedef}
+#result{margin-bottom:-25px}#resultDetail{padding-top:0;height:4em;overflow-y:scroll}#graphDescript{margin-bottom:-20px}#maxDegree{background-color:#428bca}
+#colornum{background-color:#d9534f}#c1{color:#d9534f}#c2{color:#f0ad4e}#c3{color:#5cb85c}#c4{color:#3071a9}#c5{color:#d9534f}
