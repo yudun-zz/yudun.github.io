@@ -1,0 +1,202 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>萌宝装</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <link rel="icon" type="image/png" href="assets/i/favicon.png">
+  <link rel="stylesheet" href="assets/css/amazeui.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="assets/css/mycss.css">
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 不提供支持。 请 <a
+  href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+  以获得更好的体验！</p>
+<![endif]-->
+
+<script type="text/x-handlebars-template" id="amz-tpl">
+  {{>header header}}
+
+  {{>slider slider}}
+
+  {{>gallery gallery}}
+
+  {{>list_news list1}}
+
+  {{>navbar navbar}}
+</script>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/amazeui.js"></script>
+<script src="assets/js/handlebars.min.js"></script>
+<script src="assets/js/amazeui.widgets.helper.js"></script>
+<script>
+  $(function() {
+    var $tpl = $('#amz-tpl'),
+      source = $tpl.text(),
+      template = Handlebars.compile(source),
+      data = {
+        header: {
+          "content": {
+            "title": "萌宝装",
+            "link": "",
+            "right": [
+              {
+                "link": "#right-link",
+                "icon": "camera"
+              }],
+          },
+          "options": {
+            "fixed": true
+          }
+        },
+
+        slider: {
+          "theme": "a2",
+          "className": "down50",
+          //"sliderConfig": "{\"directionNav\":false}",
+          "content": [
+            {
+              "thumb": "assets/image/g1.jpeg",
+              "img": "assets/image/g1.jpeg"
+            },
+            {
+              "thumb": "assets/image/g2.jpeg",
+              "img": "assets/image/g2.jpeg"
+            },
+            {
+              "thumb": "assets/image/g3.png",
+              "img": "assets/image/g3.png"
+            },
+            {
+              "thumb": "assets/image/g4.png",
+              "img": "assets/image/g4.png"
+            }
+          ]
+        },
+
+        list1: {
+          "options": {
+            "type": "thumb",
+            "thumbPosition": "top"
+          },
+          "content": {
+            "header": {
+              "title": "",
+              "link": "###",
+              "moreText": "更多 >>",
+              "morePosition": "top"
+            },
+            "main": [
+              {
+                "title": "宝贝冬季如何保暖？",
+                "link": "http://www.douban.com/online/11614662/",
+                "desc": "宝贝冬季如何保暖？",
+                "img": "assets/image/t1.jpeg"
+              },
+              {
+                "title": "小宝宝春装有花样",
+                "link": "http://www.douban.com/online/11624755/",
+                "desc": "小宝宝春装有花样",
+                "img": "assets/image/t2.jpeg"
+              },
+              {
+                "title": "100个宝宝的时尚之路",
+                "link": "http://www.douban.com/online/11645411/",
+                "desc": "还在苦恼宝宝衣着再也穿不出新意？快来看100个宝宝的时尚之路~",
+                "img": "assets/image/t3.jpeg"
+              }
+            ]
+          }
+        },
+
+        gallery: {
+          "options": {
+            "cols": 2,
+            "gallery": true
+          },
+
+          "content": [
+            {
+              "img": "assets/image/s1.png",
+              "link": "assets/image/s1.png",
+              "title": "我家宝宝哇哇叫！",
+              "desc": "2015-03-10"
+            },
+            {
+              "img": "assets/image/s2.jpg",
+              "link": "assets/image/s2.jpg",
+              "title": "时尚的小一一~",
+              "desc": "2015-03-10"
+            },
+            {
+              "img": "assets/image/s3.png",
+              "link": "assets/image/s3.png",
+              "title": "我的潮男小宝",
+              "desc": "2015-03-10"
+            },
+            {
+              "img": "assets/image/s4.jpeg",
+              "link": "assets/image/s4.jpeg",
+              "title": "我儿上学归来",
+              "desc": "2015-03-10"
+            },
+          ]
+        },
+
+        navbar: {
+          "options": {
+            "cols": "4",
+            "iconpos": "top"
+          },
+          "content": [
+            {
+              "title": "萌宝圈",
+              "link": "tel:123456789",
+              "icon": "child",
+              "dataApi": ""
+            },
+            {
+              "title": "每日精选",
+              "link": "",
+              "icon": "asterisk",
+              "dataApi": ""
+            },
+            {
+              "title": "个人中心",
+              "link": "",
+              "icon": "user",
+              "dataApi": "data-am-navbar-qrcode"
+            },
+            {
+              "title": "分享",
+              "link": "",
+              "icon": "share",
+              "dataApi": "data-am-navbar-share"
+            },
+
+          ]
+        }
+      },
+      html = template(data);
+
+    $tpl.before(html);
+
+    // var reflow = $('body')[0].offsetHeight;
+
+    $.each(['slider', 'menu', 'gallery', 'footer', 'navbar'], function(i, m) {
+      var module = $.AMUI[m];
+      module && module.init && module.init();
+    })
+  });
+</script>
+</body>
+</html>
