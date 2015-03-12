@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>萌宝装</title>
+  <title>萌宝圈</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="viewport"
@@ -28,75 +28,14 @@
   {{>navbar navbar}}
 </script>
 
-<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery-1.11.1.min.js"></script>
 <script src="assets/js/amazeui.js"></script>
 <script src="assets/js/handlebars.min.js"></script>
 <script src="assets/js/amazeui.widgets.helper.js"></script>
-<script>
-  $(function() {
-    var $tpl = $('#amz-tpl'),
-      source = $tpl.text(),
-      template = Handlebars.compile(source),
-      data = {
-        header: {
-          "content": {
-            "title": "萌宝圈",
-            "link": "index.html",
-            "right": [
-              {
-                "link": "#right-link",
-                "icon": "camera"
-              }],
-          },
-          "options": {
-            "fixed": true
-          }
-        },
+<script src="assets/js/template.js"></script>
 
-       
 
-        navbar: {
-          "options": {
-            "cols": "4",
-            "iconpos": "top"
-          },
-          "content": [
-            {
-              "title": "萌宝圈",
-              "link": "index.html",
-              "icon": "child",
-              "dataApi": ""
-            },
-            {
-              "title": "个人中心",
-              "link": "",
-              "icon": "user",
-              "dataApi": "data-am-navbar-qrcode"
-            },
-            {
-              "title": "分享",
-              "link": "",
-              "icon": "share",
-              "dataApi": "data-am-navbar-share"
-            },
-
-          ]
-        }
-      },
-      html = template(data);
-
-    $tpl.before(html);
-
-    // var reflow = $('body')[0].offsetHeight;
-
-    $.each(['slider', 'menu', 'gallery', 'footer', 'navbar'], function(i, m) {
-      var module = $.AMUI[m];
-      module && module.init && module.init();
-    })
-  });
-</script>
-
-  <div id ="postList" class="down70"> 
+  <div id ="postList" class="down70 up70"> 
 
     <div class="am-panel am-panel-default">
       <div class="am-panel-hd">
@@ -105,7 +44,7 @@
         </a>
         <div class="am-comment-meta">
           <a href="#link-to-user" class="am-comment-author">达达</a>
-          发表于 <time datetime="2013-07-27T04:54:29-07:00" title="2013年7月27日 下午7:54 格林尼治标准时间+0800">2015-3-12 15:30</time>
+          发表于 <time datetime="2013-07-27T04:54:29-07:00" title="2013年7月27日 下午7:54 格林尼治标准时间+0800">30min 前</time>
         </div>
       </div>
 
@@ -138,7 +77,7 @@
       </div>
       <footer class="am-comment-footer">
         <div class="am-comment-actions">
-          <a class = "zan"><i class="am-icon-thumbs-up"></i>赞(5)</a> 
+          <a class="zan"><i class="am-icon-thumbs-up"></i>赞(5)</a> 
           <a class = "comment"><i class="am-icon-comment"></i>评论(2)</a>
           <a class = "collect"><i class="am-icon-folder"></i>收藏(1)</a>
         </div>
@@ -154,7 +93,7 @@
         </a>
         <div class="am-comment-meta">
           <a href="#link-to-user" class="am-comment-author">酷儿</a>
-          发表于 <time datetime="2013-07-27T04:54:29-07:00" title="2013年7月27日 下午7:54 格林尼治标准时间+0800">2015-3-12 10:30</time>
+          发表于 <time datetime="2013-07-27T04:54:29-07:00" title="2013年7月27日 下午7:54 格林尼治标准时间+0800">45min 前</time>
         </div>
       </div>
 
@@ -173,5 +112,6 @@
 
   </div>
 
+  <script src="assets/js/myjs.js"></script>
 </body>
 </html>

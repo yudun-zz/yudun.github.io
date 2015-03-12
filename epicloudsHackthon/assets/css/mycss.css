@@ -6,6 +6,10 @@
 	margin-top: 60px;
 }
 
+.up70{
+	margin-bottom: 60px;
+}
+
 .am-panel-default{
 	margin: 20px 10px 0 10px;
 }
@@ -21,4 +25,7 @@
     margin-top: -20px;    
     color: grey;
 	font-size: small
+}
+.am-comment-actions{
+	cursor: pointer;
 }
