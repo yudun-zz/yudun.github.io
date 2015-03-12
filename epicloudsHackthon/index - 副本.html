@@ -25,6 +25,10 @@
 <script type="text/x-handlebars-template" id="amz-tpl">
   {{>header header}}
 
+  {{>slider slider}}
+
+  {{>list_news list1}}
+
   {{>navbar navbar}}
 </script>
 
@@ -53,7 +57,68 @@
           }
         },
 
-       
+        slider: {
+          "theme": "c3",
+          "className": "down50",
+          //"sliderConfig": "{\"directionNav\":false}",
+          "content": [
+            {
+              "thumb": "assets/image/g1.jpg",
+              "img": "assets/image/g1.jpg",
+              "desc": "宝贝冬季如何保暖？"
+            },
+            {
+              "thumb": "assets/image/g2.jpg",
+              "img": "assets/image/g2.jpg",
+              "desc": "宝贝冬季如何保暖？"
+            },
+            {
+              "thumb": "assets/image/g3.jpg",
+              "img": "assets/image/g3.jpg",
+              "desc": "宝贝冬季如何保暖？"
+            },
+            {
+              "thumb": "assets/image/g4.jpg",
+              "img": "assets/image/g4.jpg",
+              "desc": "宝贝冬季如何保暖？"
+            }
+          ]
+        },
+
+        list1: {
+          "options": {
+            "type": "thumb",
+            "thumbPosition": "top"
+          },
+          "content": {
+            "header": {
+              "title": "",
+              "link": "###",
+              "moreText": "更多 >>",
+              "morePosition": "top"
+            },
+            "main": [
+              {
+                "title": "宝贝冬季如何保暖？",
+                "link": "http://www.douban.com/online/11614662/",
+                "desc": "宝贝冬季如何保暖？",
+                "img": "assets/image/t1.jpg"
+              },
+              {
+                "title": "小宝宝春装有花样",
+                "link": "http://www.douban.com/online/11624755/",
+                "desc": "小宝宝春装有花样",
+                "img": "assets/image/t2.jpg"
+              },
+              {
+                "title": "100个宝宝的时尚之路",
+                "link": "http://www.douban.com/online/11645411/",
+                "desc": "还在苦恼宝宝衣着再也穿不出新意？快来看100个宝宝的时尚之路~",
+                "img": "assets/image/t3.jpg"
+              }
+            ]
+          }
+        },
 
         navbar: {
           "options": {
@@ -63,7 +128,7 @@
           "content": [
             {
               "title": "萌宝圈",
-              "link": "tel:123456789",
+              "link": "circle.html",
               "icon": "child",
               "dataApi": ""
             },
@@ -101,35 +166,5 @@
     })
   });
 </script>
-
-  <div id ="postList" class="down70"> 
-    <div class="am-panel am-panel-default">
-      <div class="am-panel-hd">
-        <a href="#link-to-user-home">
-          <img src="assets/image/tou1.jpg" alt="" class="am-comment-avatar" width="48" height="48"/>
-        </a>
-        <div class="am-comment-meta">
-          <a href="#link-to-user" class="am-comment-author">辣妈</a>
-          发表于 <time datetime="2013-07-27T04:54:29-07:00" title="2013年7月27日 下午7:54 格林尼治标准时间+0800">2015-7-12 15:30</time>
-        </div>
-      </div>
-
-      <div class="">
-          <img src="assets/image/t1.jpg" />
-          <p class="paragraph-default-p">今天帮萌宝买了情侣装:)</p>
-      </div>
-      <footer class="am-comment-footer">
-        <div class="am-comment-actions">
-          <a class = "zan"><i class="am-icon-thumbs-up"></i>赞(5)</a> 
-          <a class = "comment"><i class="am-icon-comment"></i>评论(2)</a>
-          <a class = "collect"><i class="am-icon-folder"></i>收藏(1)</a>
-        </div>
-      </footer>
-    </div>
-
-  </div>
-
-
-
 </body>
 </html>

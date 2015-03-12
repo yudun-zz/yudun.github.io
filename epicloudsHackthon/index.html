@@ -25,10 +25,6 @@
 <script type="text/x-handlebars-template" id="amz-tpl">
   {{>header header}}
 
-  {{>slider slider}}
-
-  {{>list_news list1}}
-
   {{>navbar navbar}}
 </script>
 
@@ -44,7 +40,7 @@
       data = {
         header: {
           "content": {
-            "title": "萌宝装",
+            "title": "萌宝圈",
             "link": "index.html",
             "right": [
               {
@@ -57,68 +53,7 @@
           }
         },
 
-        slider: {
-          "theme": "c3",
-          "className": "down50",
-          //"sliderConfig": "{\"directionNav\":false}",
-          "content": [
-            {
-              "thumb": "assets/image/g1.jpg",
-              "img": "assets/image/g1.jpg",
-              "desc": "宝贝冬季如何保暖？"
-            },
-            {
-              "thumb": "assets/image/g2.jpg",
-              "img": "assets/image/g2.jpg",
-              "desc": "宝贝冬季如何保暖？"
-            },
-            {
-              "thumb": "assets/image/g3.jpg",
-              "img": "assets/image/g3.jpg",
-              "desc": "宝贝冬季如何保暖？"
-            },
-            {
-              "thumb": "assets/image/g4.jpg",
-              "img": "assets/image/g4.jpg",
-              "desc": "宝贝冬季如何保暖？"
-            }
-          ]
-        },
-
-        list1: {
-          "options": {
-            "type": "thumb",
-            "thumbPosition": "top"
-          },
-          "content": {
-            "header": {
-              "title": "",
-              "link": "###",
-              "moreText": "更多 >>",
-              "morePosition": "top"
-            },
-            "main": [
-              {
-                "title": "宝贝冬季如何保暖？",
-                "link": "http://www.douban.com/online/11614662/",
-                "desc": "宝贝冬季如何保暖？",
-                "img": "assets/image/t1.jpg"
-              },
-              {
-                "title": "小宝宝春装有花样",
-                "link": "http://www.douban.com/online/11624755/",
-                "desc": "小宝宝春装有花样",
-                "img": "assets/image/t2.jpg"
-              },
-              {
-                "title": "100个宝宝的时尚之路",
-                "link": "http://www.douban.com/online/11645411/",
-                "desc": "还在苦恼宝宝衣着再也穿不出新意？快来看100个宝宝的时尚之路~",
-                "img": "assets/image/t3.jpg"
-              }
-            ]
-          }
-        },
+       
 
         navbar: {
           "options": {
@@ -128,14 +63,8 @@
           "content": [
             {
               "title": "萌宝圈",
-              "link": "circle.html",
+              "link": "index.html",
               "icon": "child",
-              "dataApi": ""
-            },
-            {
-              "title": "每日精选",
-              "link": "",
-              "icon": "asterisk",
               "dataApi": ""
             },
             {
@@ -166,5 +95,83 @@
     })
   });
 </script>
+
+  <div id ="postList" class="down70"> 
+
+    <div class="am-panel am-panel-default">
+      <div class="am-panel-hd">
+        <a href="#link-to-user-home">
+          <img src="assets/image/tou2.jpg" alt="" class="am-comment-avatar" width="48" height="48"/>
+        </a>
+        <div class="am-comment-meta">
+          <a href="#link-to-user" class="am-comment-author">达达</a>
+          发表于 <time datetime="2013-07-27T04:54:29-07:00" title="2013年7月27日 下午7:54 格林尼治标准时间+0800">2015-3-12 15:30</time>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="am-panel">
+
+          <p class="paragraph-default-p">很值得学习的文章~</p>
+
+          <div class="am-panel-hd">
+            <ul class="am-list">
+              <!--缩略图在标题左边-->
+              <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
+                <div class="am-u-sm-4 am-list-thumb">
+                  <a href="http://www.douban.com/online/11614662/" class="">
+                    <img src="http://img5.douban.com/lpic/o636459.jpg" alt="我很囧，你保重....晒晒旅行中的那些囧！"
+                    />
+                  </a>
+                </div>
+                <div class=" am-u-sm-8 am-list-main">
+                  <h3 class="am-list-item-hd">
+                    <a href="http://www.douban.com/online/11614662/" class="">我很囧，你保重....晒晒旅行中的那些囧！</a>
+                  </h3>
+                </div>
+                  <div class="am-list-item-text">囧人囧事囧照，人在囧途，越囧越萌。标记《带你出发，陪我回家》http://book.douban.com/subject/25711202/为“想读”“在读”或“读过”，有机会获得此书本活动进行3个月，每月送出三本书。会有不定期bonus！</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <footer class="am-comment-footer">
+        <div class="am-comment-actions">
+          <a class = "zan"><i class="am-icon-thumbs-up"></i>赞(5)</a> 
+          <a class = "comment"><i class="am-icon-comment"></i>评论(2)</a>
+          <a class = "collect"><i class="am-icon-folder"></i>收藏(1)</a>
+        </div>
+      </footer>
+    </div>
+
+
+
+    <div class="am-panel am-panel-default">
+      <div class="am-panel-hd">
+        <a href="#link-to-user-home">
+          <img src="assets/image/tou1.jpg" alt="" class="am-comment-avatar" width="48" height="48"/>
+        </a>
+        <div class="am-comment-meta">
+          <a href="#link-to-user" class="am-comment-author">酷儿</a>
+          发表于 <time datetime="2013-07-27T04:54:29-07:00" title="2013年7月27日 下午7:54 格林尼治标准时间+0800">2015-3-12 10:30</time>
+        </div>
+      </div>
+
+      <div class="">
+          <p class="paragraph-default-p">今天帮萌宝买了情侣装:)</p>
+          <img src="assets/image/t1.jpg" />
+      </div>
+      <footer class="am-comment-footer">
+        <div class="am-comment-actions">
+          <a class = "zan"><i class="am-icon-thumbs-up"></i>赞(5)</a> 
+          <a class = "comment"><i class="am-icon-comment"></i>评论(2)</a>
+          <a class = "collect"><i class="am-icon-folder"></i>收藏(1)</a>
+        </div>
+      </footer>
+    </div>
+
+  </div>
+
 </body>
 </html>

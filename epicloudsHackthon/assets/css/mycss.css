@@ -17,3 +17,8 @@
 	margin: 0 10px 0 10px;
 	font-size: 13px;
 }
+.commentTime{
+    margin-top: -20px;    
+    color: grey;
+	font-size: small
+}
