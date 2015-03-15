@@ -10,7 +10,8 @@
             "link": "index.html",
             "right": [
               {
-                "link": "#right-link",
+                "className" : "camera",
+                "link": "",
                 "icon": "camera"
               }],
           },
@@ -34,13 +35,12 @@
               "title": "个人中心",
               "link": "user.html",
               "icon": "user",
-              "dataApi": "data-am-navbar-qrcode"
+              "dataApi": ""
             },
             {
               "title": "分享",
-              "link": "",
               "icon": "share",
-              "dataApi": "data-am-navbar-share"
+              "dataApi": "data-am-navbar-qrcode"
             },
 
           ]

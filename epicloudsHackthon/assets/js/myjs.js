@@ -16,3 +16,6 @@ $(".zan, .collect").click(function(){
 	}
 })
 
+$(".camera").click(){
+	var fileName = window.demo.clickOnAndroid();
+}
