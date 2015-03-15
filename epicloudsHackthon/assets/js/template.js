@@ -11,7 +11,7 @@
             "right": [
               {
                 "className" : "camera",
-                "link": "",
+                "link": "#",
                 "icon": "camera"
               }],
           },

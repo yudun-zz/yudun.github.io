@@ -24,20 +24,49 @@
   以获得更好的体验！</p>
 <![endif]-->
 
-<script type="text/x-handlebars-template" id="amz-tpl">
-  {{>header header}}
-
-  {{>navbar navbar}}
-</script>
-
 <script src="assets/js/jquery-1.11.1.min.js"></script>
 <script src="assets/js/amazeui.js"></script>
 <script src="assets/js/handlebars.min.js"></script>
 <script src="assets/js/amazeui.widgets.helper.js"></script>
-<script src="assets/js/template.js"></script>
+
+<header data-am-widget="header" class="am-header am-header-default am-header-fixed">
+  <h1 class="am-header-title">
+    <a href="index.html" class="">萌宝圈</a>
+  </h1>
+  <div class="am-header-right am-header-nav">
+    <a class="camera">
+      <i class="am-header-icon am-icon-camera"></i>
+    </a>
+  </div>
+</header>
+
+<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default "
+id="">
+  <ul class="am-navbar-nav am-cf am-avg-sm-4">
+    <li>
+      <a href="index.html" class="navbarItem">
+        <span class="am-icon-child"></span>
+        <span class="am-navbar-label">萌宝圈</span>
+      </a>
+    </li>
+    <li>
+      <a href="user.html" class="navbarItem">
+        <span class="am-icon-user"></span>
+        <span class="am-navbar-label">个人中心</span>
+      </a>
+    </li>
+    <li data-am-navbar-share>
+      <a class="navbarItem">
+        <span class="am-icon-share-square-o"></span>
+        <span class="am-navbar-label">分享</span>
+      </a>
+    </li>
+  </ul>
+</div>
 
 
-  <div id ="postList" class="down70 up70"> 
+
+  <div id ="postList" class="up70"> 
     
     <div class="am-panel am-panel-default">
       <div class="am-panel-hd">
