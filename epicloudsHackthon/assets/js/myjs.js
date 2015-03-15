@@ -25,8 +25,7 @@ $(".camera").click(function(){
 		+'<div class="am-panel-hd"><a href="user1.html"><img src="assets/image/tou.jpg" alt="" class="am-comment-avatar" width="48" height="48"/></a>'
 		+'<div class="am-comment-meta"><a href="user.html" class="am-comment-author">王小宇</a>刚刚发表</div></div>'
 		+'<div class=""><p class="paragraph-default-p">'
-		+'测试'+'</p><img src="file:/'
-		+ fileName +'" /></div>'
+		+'测试'+'</p><img src="file://storage/sdcard0/webview_camera/testimg415.28969341889481.jpg" /></div>'
 		+'<footer class="am-comment-footer"><div id="'+fileName+'" class="am-comment-actions"><a class = "zan"><i class="am-icon-thumbs-up"></i>赞(0)</a> <a href="cmt.html" class = "comment"><i class="am-icon-comment"></i>评论(0)</a><a class = "collect"><i class="am-icon-folder"></i>收藏(0)</a></div></footer>'
 		+'</div>')
 	bindHandler("#"+fileName+" .zan, #"+fileName+" .collect")
