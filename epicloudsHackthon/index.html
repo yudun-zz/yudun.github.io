@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js">
+<html ng-app="mengbaoApp"  ng-controller="mengbaoPost">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="assets/css/amazeui.css">
   <link rel="stylesheet" href="assets/css/app.css">
   <link rel="stylesheet" href="assets/css/mycss.css">
+
+  <script src="assets/js/angular.min.js"></script>
 </head>
 <body>
 <!--[if lte IE 9]>
@@ -39,15 +41,14 @@
 
     <div class="am-panel am-panel-default">
       <div class="am-panel-hd">
-        <a href="#link-to-user-home">
-          <img src="assets/image/tou2.jpg" alt="" class="am-comment-avatar" width="48" height="48"/>
+        <a href="user1.html">
+          <img src="assets/image/tou1.jpg" alt="" class="am-comment-avatar" width="48" height="48"/>
         </a>
         <div class="am-comment-meta">
-          <a href="#link-to-user" class="am-comment-author">达达</a>
-          发表于 <time datetime="2013-07-27T04:54:29-07:00" title="2013年7月27日 下午7:54 格林尼治标准时间+0800">30min 前</time>
+          <a href="user1.html" class="am-comment-author">达达</a>
+          发表于 <time>30s 前</time>
         </div>
       </div>
-
       <div class="">
         <div class="am-panel">
 
@@ -58,17 +59,16 @@
               <!--缩略图在标题左边-->
               <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
                 <div class="am-u-sm-4 am-list-thumb">
-                  <a href="http://www.douban.com/online/11614662/" class="">
-                    <img src="http://img5.douban.com/lpic/o636459.jpg" alt="我很囧，你保重....晒晒旅行中的那些囧！"
-                    />
+                  <a href="http://www.douban.com/group/topic/73169877/" class="">
+                    <img src="assets/image/39.jpg" />
                   </a>
                 </div>
                 <div class=" am-u-sm-8 am-list-main">
                   <h3 class="am-list-item-hd">
-                    <a href="http://www.douban.com/online/11614662/" class="">我很囧，你保重....晒晒旅行中的那些囧！</a>
+                    <a href="http://www.douban.com/group/topic/73169877/" class="">给孩子爱和自由</a>
                   </h3>
                 </div>
-                  <div class="am-list-item-text">囧人囧事囧照，人在囧途，越囧越萌。标记《带你出发，陪我回家》http://book.douban.com/subject/25711202/为“想读”“在读”或“读过”，有机会获得此书本活动进行3个月，每月送出三本书。会有不定期bonus！</div>
+                  <div class="am-list-item-text">当我们说爱自己孩子的时候，为人父母的我们真的知道自己在说什么吗？也许很多父母一生都没有想过这样的问题。你甚至会问，这问题重要么？...</div>
               </li>
             </ul>
           </div>
@@ -78,7 +78,7 @@
       <footer class="am-comment-footer">
         <div class="am-comment-actions">
           <a class="zan"><i class="am-icon-thumbs-up"></i>赞(5)</a> 
-          <a class = "comment"><i class="am-icon-comment"></i>评论(2)</a>
+          <a href="cmt.html" class = "comment"><i class="am-icon-comment"></i>评论(2)</a>
           <a class = "collect"><i class="am-icon-folder"></i>收藏(1)</a>
         </div>
       </footer>
@@ -86,32 +86,33 @@
 
 
 
-    <div class="am-panel am-panel-default">
+    <div class="am-panel am-panel-default" ng-repeat = "item in data">
       <div class="am-panel-hd">
-        <a href="#link-to-user-home">
-          <img src="assets/image/tou1.jpg" alt="" class="am-comment-avatar" width="48" height="48"/>
+        <a href="user{{ item.usernum+1}}.html">
+          <img src="assets/image/tou{{item.usernum+1}}.jpg" alt="" class="am-comment-avatar" width="48" height="48"/>
         </a>
         <div class="am-comment-meta">
-          <a href="#link-to-user" class="am-comment-author">酷儿</a>
-          发表于 <time datetime="2013-07-27T04:54:29-07:00" title="2013年7月27日 下午7:54 格林尼治标准时间+0800">45min 前</time>
+          <a href="user{{ item.usernum+1}}.html" class="am-comment-author">{{username[item.usernum]}}</a>
+          发表于 <time>{{item.time}}</time>
         </div>
       </div>
 
       <div class="">
-          <p class="paragraph-default-p">今天帮萌宝买了情侣装:)</p>
-          <img src="assets/image/t1.jpg" />
+          <p class="paragraph-default-p">{{item.comment}}</p>
+          <img src="assets/image/{{item.picnum}}.jpg" />
       </div>
       <footer class="am-comment-footer">
         <div class="am-comment-actions">
-          <a class = "zan"><i class="am-icon-thumbs-up"></i>赞(5)</a> 
-          <a href="cmt1.html" class = "comment"><i class="am-icon-comment"></i>评论(2)</a>
-          <a class = "collect"><i class="am-icon-folder"></i>收藏(1)</a>
+          <a class = "zan"><i class="am-icon-thumbs-up"></i>赞({{item.likenum}})</a> 
+          <a href="cmt.html" class = "comment"><i class="am-icon-comment"></i>评论({{item.cmtnum}})</a>
+          <a class = "collect"><i class="am-icon-folder"></i>收藏({{item.collectnum}})</a>
         </div>
       </footer>
     </div>
 
   </div>
 
+  <script src="assets/js/angularSetting.js"></script>  
   <script src="assets/js/myjs.js"></script>
 </body>
 </html>

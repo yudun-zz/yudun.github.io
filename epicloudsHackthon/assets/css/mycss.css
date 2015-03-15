@@ -29,3 +29,13 @@
 .am-comment-actions{
 	cursor: pointer;
 }
+.besmall{
+	font-size: 15px;
+    margin-top: 10px;
+}
+cite{
+	padding: 2px 5px 2px 7px;
+	background: #ff77a5 url(../image/arr2.png) no-repeat 0 center;
+	font-size: 12px;
+	font-style: normal;
+}

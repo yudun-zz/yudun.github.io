@@ -32,7 +32,7 @@
             },
             {
               "title": "个人中心",
-              "link": "",
+              "link": "user.html",
               "icon": "user",
               "dataApi": "data-am-navbar-qrcode"
             },
