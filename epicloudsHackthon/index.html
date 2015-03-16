@@ -14,8 +14,11 @@
   <link rel="stylesheet" href="assets/css/amazeui.css">
   <link rel="stylesheet" href="assets/css/app.css">
   <link rel="stylesheet" href="assets/css/mycss.css">
+  <link rel="stylesheet" href="assets/js/hookjs/hook.css"/>
 
+  <script src="assets/js/jquery-1.11.1.min.js"></script>
   <script src="assets/js/angular.min.js"></script>
+  <script src="assets/js/hookjs/hook.js"></script>
 </head>
 <body>
 <!--[if lte IE 9]>
@@ -23,8 +26,13 @@
   href="http://browsehappy.com/" target="_blank">升级浏览器</a>
   以获得更好的体验！</p>
 <![endif]-->
+<div id="hook">
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+  <span id="hook-text">正在加载...</span>
+</div>
 
-<script src="assets/js/jquery-1.11.1.min.js"></script>
 <script src="assets/js/amazeui.js"></script>
 <script src="assets/js/handlebars.min.js"></script>
 <script src="assets/js/amazeui.widgets.helper.js"></script>
