@@ -1,16 +1,51 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <head>
+  <meta name="viewport" content="width=620, user-scalable=no" />
   <title>时间轴</title>
+  <link rel="stylesheet" href="css/jquery.qtip.min.css" type="text/css"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
   <link rel="stylesheet" href="css/main.css" type="text/css"/>
 </head>
 <body>
   <script type="text/javascript" src="js/library/wz_tooltip.min.js"></script>
   
-  <svg class="timeline"></svg>
+  <svg class="timeline">
+      <g id="abstractBtn">
+          <defs>
+              <marker refY="50" refX="50" markerHeight="5" markerWidth="5" viewBox="0 0 100 100" se_type="star" orient="auto" markerUnits="strokeWidth" id="se_marker_mid_svg_1">
+                  <path stroke-width="10" stroke="#ffffff" fill="#ffffff" d="m10,30l80,0l-70,60l30,-80l30,80z"/>
+              </marker>
+          </defs>
+          <g>
+              <title>Layer 1</title>
+              <path marker-mid="url(#se_marker_mid_svg_1)" opacity="0.9" id="svg_1" d="m19,16l70,0l0,26l-70,0l0,-26z" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" stroke="#ffffff" fill="#8d69db"/>
+              <text id="abstractText" font-weight="normal" transform="matrix(0.6323529593646526,0,0,0.6345307487689524,311.99999721720815,107.44292737093622) " xml:space="preserve" text-anchor="middle" font-family="Serif" font-size="24" id="svg_2" y="-113.81752" x="-408.79068" opacity="0.9" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000">显示摘要</text>
+          </g>
+      </g>
+      <text font-weight="bold" xml:space="preserve" text-anchor="middle" font-family="Serif" font-size="24" id="svg_3" y="69" x="176" opacity="0.9" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#ffffff" fill="#ffffff">2015</text>
+      <text font-weight="bold" xml:space="preserve" text-anchor="middle" font-family="Serif" font-size="24" id="svg_4" y="199" x="177" opacity="0.9" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#ffffff" fill="#ffffff">2014</text>
+  </svg>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-body">
+                  <h6 id="datetext" style="font-size: 50px;"></h6>
+                  <img id="myPhoto" src="" alt="" style="max-height: 600px; width: 100%;"/>
+                  <p id="pictext" style="font-size: 40px"></p>
+                  <hr/>
+                  <input id="newtext" type="text" class="form-control"/>
+              </div>
+          </div>
+      </div>
+  </div>
 
   <script src="js/library/d3.min.js"></script>
   <script src="js/library/jquery-1.10.2.min.js"></script>
-  <script src="js/library/underscore-min.js"></script>
-  <script src="js/main.js"></script> 
+  <script src="js/library/jquery.finger.min.js"></script>
+  <script src="js/library/bootstrap.min.js"></script>
+  <script src="js/library/jquery.qtip.min.js"></script>
+  <script src="js/library/imagesloaded.pkg.min.js"></script>
+  <script src="js/main.js"></script>
 </body>   

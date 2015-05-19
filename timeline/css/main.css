@@ -1,0 +1,20 @@
+*{
+    font-family: "Microsoft YaHei", "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.qtip-content{
+    font-size: 20px;
+}
+
+.qtip{
+    max-width: none;
+}
+
+.modal-lg{
+    width: 90%;
+    margin-top: 30%;
+}
+
+.timeline{
+    background: url(../image/bg.png) center fixed;
+}
