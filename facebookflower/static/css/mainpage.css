@@ -1,0 +1,78 @@
+#guidance{
+  font-family: "Verdana";
+}
+
+#guidanceBtn:hover{
+  opacity: 1;
+}
+
+#loader{
+  margin-top: 5%;
+}
+
+#exampleJPG {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@font-face {
+   font-family: 'VTKSFLOWERSINOURSOUL'; 
+   src: url('webfont/VTKSFLOWERSINOURSOUL.eot?') format('eot'), 
+   url('webfont/VTKSFLOWERSINOURSOUL.woff') format('woff'), 
+   url('webfont/VTKSFLOWERSINOURSOUL.ttf') format('truetype'), 
+   url('webfont/VTKSFLOWERSINOURSOUL.svg#VTKSFLOWERSINOURSOUL') format('svg');
+}
+
+@font-face {
+    font-family: 'girlnextdoor';
+    src: url('webfont/girlnextdoor.ttf')  format('truetype');
+}
+
+#login{
+  margin-top: 5%;
+}
+
+#studytitle, .cmptitle {
+  font-family: 'VTKSFLOWERSINOURSOUL'; 
+  font-size: 200%;
+  font-weight: normal;
+}
+
+#headtitle {
+  font-family: 'VTKSFLOWERSINOURSOUL'; 
+  font-size: 600%;
+  font-weight: normal;
+  margin-top: 7%;
+}
+
+#mainviewtitle{
+    font-family: "Verdana";
+    display:none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#mainviewtitle button{
+    width: 120px;
+}
+
+#subtitle{
+  font-family: "girlnextdoor";
+  font-weight: 900;
+  font-size: 200%;
+}
+
+#subtitleRemarks{
+  font-family: "girlnextdoor";
+  font-weight: 900;
+  font-size: 70%;
+}
+
+#loader,#status,#loadingsubtitle {
+  font-family: "girlnextdoor";
+  font-weight: 900;
+  display: none;
+  font-size: 200%;
+}
+

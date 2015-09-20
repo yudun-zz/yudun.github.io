@@ -1,18 +1,138 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
+<html lang="en">
 <head>
-  <title>Facebook Flower</title>
-  <style>
-  </style>
-
-  <script src="js/library/d3.min.js"></script>
-  <script src="js/library/jquery-1.10.2.min.js"></script>
-  <script src="js/library/underscore-min.js"></script>
-  <script src="js/library/colpick.min.js"></script>
-  <link rel="stylesheet" href="css/colpick.css" type="text/css"/>
+    <meta charset="utf-8">
+    <title>Facebook Visualization</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/colpick.css" type="text/css"/>
+    <link rel="stylesheet" href="static/css/mainpage.css" type="text/css"/>
 </head>
 <body>
-  <script type="text/javascript" src="js/library/wz_tooltip.min.js"></script>
-  <svg class="flower"></svg>
-  <script src="js/flower.js"></script> 
-</body>   
+<script type="text/javascript" src="static/js/library/wz_tooltip.min.js"></script>
+<!-- Shift Buttons -->
+<div id="mainviewtitle" align="center">
+    <button type="button" onclick="showvis('conventionalsvg')" class="btn btn-primary">Conventional</button>
+    <button type="button" onclick="showvis('sparksvg')" class="btn btn-primary">Spark</button>
+    <button type="button" onclick="showvis('bouquetsvg')" class="btn btn-primary">Bouquet</button>
+    <button type="button" data-toggle="modal" data-target="#about" class="btn btn-danger">About</button>
+</div>
+<!-- Loading Prompt -->
+<div align="center" id="title">
+    <h1 id="headtitle">Facebook Visualization</h1>
+    <h2 id="subtitle">To learn your facebook pattern in 3 different style</h2>
+    <img id="loader" src = "static/image/loader.gif">
+    <div id="status">Rendering (within seconds) ...</div>
+</div>
+<!-- guidance modal for Spark -->
+<div class="modal fade in" id="sparkguidance" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true" style="display: none">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title">Welcome!</h4>
+            </div>
+            <div class="modal-body">
+                This is my "facebook Spark", how do you like it?
+                <br>
+                Now I will tell you what does it mean:
+                <br>
+                <br>
+                <img src = "static/image/sparkguide.jpg" width = "100%">
+                Enjoy it!
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- guidance modal for Bouquet -->
+<div class="modal fade in" id="bouquetguidance" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true" style="display: none">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title">Welcome!</h4>
+            </div>
+            <div class="modal-body">
+                This is my "facebook Bouquet", how do you like it?
+                <br>
+                Now I will tell you what does it mean.
+                <br>
+                <br>
+                <b>Basically, each flower denotes a year’s data, and each petal denotes data from a month.</b>
+                <img src = "static/image/bouquetguide.jpg" width = "100%">
+                Enjoy it!
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal for About -->
+<div class="modal fade in" id="about" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true" style="display: none">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title">About this Facebook Visualization</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Hi, I am
+                    <a target="_blank" href="https://www.linkedin.com/profile/view?id=AAIAABHkuyUBzvWHCW5Gmy
+              -A6zWyf8GbR0jeK7M&trk=nav_responsive_tab_profile">Shimin Wang</a>, and this is a
+                    demo for my previous work on the visualization of personal Facebook data.
+
+                </p>
+                <p>
+                    I am always interested in data visualization and frontend development. In the year of 2014,
+                    using
+                    <a target="_blank" href="http://d3js.org/">D3.js</a>, I designed three distinguished
+                    visualization for Personal Facebook data and performed a well-formed user study on these designs.
+                    I published this research work as the first Author in
+                    <a target="_blank"
+                       href="http://online.qmags.com/CGA0715?sessionID=D06E53F2BEFBDD7DB44E0FCBE&cid=3281895&
+              eid=19477#pg85&mode2">
+                        Computer Graphics and Applications, IEEE, 35(4), 82-93.</a>
+                </p>
+                <div class="alert alert-info" role="alert">I am now looking for an internship involved with data
+                    visualization and frontend development,
+                    please feel free to
+                    <a href="mailto:wyudun@gmail.com" target="_top">send me an email</a>
+                    if you are interested in my experiences or want to know more about this project :)
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="static/js/library/colpick.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="static/js/global.js"></script>
+<script src="static/js/booter.js"></script>
+<script src="static/js/shiftvis.js"></script>
+</body>
+</html>
