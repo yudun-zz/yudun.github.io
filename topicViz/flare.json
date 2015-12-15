@@ -1,0 +1,414 @@
+{
+ "name": "lung",
+ "children": [
+  {
+   "name": "mouse",
+   "children": [
+    {
+     "name": "phenotypes",
+     "size": 4
+    },
+    {
+     "name": "mutation",
+     "size": 3
+    },
+    {
+     "name": "mutations",
+     "size": 3
+    },
+    {
+     "name": "monocytes",
+     "size": 2
+    },
+    {
+     "name": "plasma",
+     "size": 2
+    },
+    {
+     "name": "murine",
+     "size": 2
+    },
+    {
+     "name": "rectal",
+     "size": 2
+    },
+    {
+     "name": "IL-12",
+     "size": 2
+    },
+    {
+     "name": "TLR4",
+     "size": 2
+    },
+    {
+     "name": "obesity",
+     "size": 2
+    }
+   ]
+  },
+  {
+   "name": "cells",
+   "children": [
+    {
+     "name": "pluripotent",
+     "size": 4
+    },
+    {
+     "name": "-10",
+     "size": 3
+    },
+    {
+     "name": "CD4",
+     "size": 3
+    },
+    {
+     "name": "breast cancer",
+     "size": 3
+    },
+    {
+     "name": "stem cell",
+     "size": 3
+    },
+    {
+     "name": "hematopoietic",
+     "size": 3
+    },
+    {
+     "name": "graft-versus-host disease",
+     "size": 2
+    },
+    {
+     "name": "umbilical cord",
+     "size": 2
+    },
+    {
+     "name": "UCB",
+     "size": 2
+    },
+    {
+     "name": "assay",
+     "size": 2
+    }
+   ]
+  },
+  {
+   "name": "smooth muscle",
+   "children": []
+  },
+  {
+   "name": "genes",
+   "children": [
+    {
+     "name": "genome",
+     "size": 7
+    },
+    {
+     "name": "transcription",
+     "size": 4
+    },
+    {
+     "name": "evolution",
+     "size": 3
+    },
+    {
+     "name": "genomes",
+     "size": 3
+    },
+    {
+     "name": "Saccharomyces cerevisiae",
+     "size": 2
+    },
+    {
+     "name": "dynamics",
+     "size": 2
+    },
+    {
+     "name": "H3K4me2",
+     "size": 2
+    },
+    {
+     "name": "copy-number variation",
+     "size": 2
+    },
+    {
+     "name": "transcriptional regulation",
+     "size": 2
+    },
+    {
+     "name": "neuropsychiatric",
+     "size": 2
+    }
+   ]
+  },
+  {
+   "name": "protein",
+   "children": [
+    {
+     "name": "protein structure",
+     "size": 4
+    },
+    {
+     "name": "intrinsically disordered proteins",
+     "size": 3
+    },
+    {
+     "name": "globular proteins",
+     "size": 3
+    },
+    {
+     "name": "protein-protein interactions",
+     "size": 3
+    },
+    {
+     "name": "protein folding",
+     "size": 2
+    },
+    {
+     "name": "multicellular",
+     "size": 2
+    },
+    {
+     "name": "alternative splicing",
+     "size": 2
+    },
+    {
+     "name": "intramolecular",
+     "size": 2
+    },
+    {
+     "name": "mass spectrometry",
+     "size": 2
+    },
+    {
+     "name": "proteomes",
+     "size": 2
+    }
+   ]
+  },
+  {
+   "name": "epithelium",
+   "children": [
+    {
+     "name": "p63",
+     "size": 3
+    },
+    {
+     "name": "cornea",
+     "size": 2
+    },
+    {
+     "name": "transduce",
+     "size": 2
+    },
+    {
+     "name": "trachea",
+     "size": 2
+    },
+    {
+     "name": "esophagus",
+     "size": 2
+    },
+    {
+     "name": "sonic hedgehog",
+     "size": 2
+    },
+    {
+     "name": "wound healing",
+     "size": 2
+    },
+    {
+     "name": "gustatory",
+     "size": 2
+    },
+    {
+     "name": "macrophage",
+     "size": 2
+    },
+    {
+     "name": "metaplasia",
+     "size": 1
+    }
+   ]
+  },
+  {
+   "name": "inflammation",
+   "children": [
+    {
+     "name": "colon",
+     "size": 4
+    },
+    {
+     "name": "regulatory T cells",
+     "size": 3
+    },
+    {
+     "name": "immune response",
+     "size": 2
+    },
+    {
+     "name": "pancreas",
+     "size": 2
+    },
+    {
+     "name": "inflammatory bowel diseases",
+     "size": 2
+    },
+    {
+     "name": "Il2",
+     "size": 2
+    },
+    {
+     "name": "JNK1",
+     "size": 1
+    },
+    {
+     "name": "JNK2",
+     "size": 1
+    },
+    {
+     "name": "EGR",
+     "size": 1
+    },
+    {
+     "name": "anti-inflammatory",
+     "size": 1
+    }
+   ]
+  },
+  {
+   "name": "gene",
+   "children": [
+    {
+     "name": "gene networks",
+     "size": 2
+    },
+    {
+     "name": "functional analysis",
+     "size": 2
+    },
+    {
+     "name": "splicing",
+     "size": 1
+    },
+    {
+     "name": "influenza",
+     "size": 1
+    },
+    {
+     "name": "insects",
+     "size": 1
+    },
+    {
+     "name": "polyadenylated",
+     "size": 1
+    },
+    {
+     "name": "parsimony",
+     "size": 1
+    },
+    {
+     "name": "blast fungus",
+     "size": 1
+    },
+    {
+     "name": "Sorghum bicolor",
+     "size": 1
+    },
+    {
+     "name": "oxidative phosphorylation",
+     "size": 1
+    }
+   ]
+  },
+  {
+   "name": "morphogenesis",
+   "children": [
+    {
+     "name": "salivary gland",
+     "size": 6
+    },
+    {
+     "name": "mammary gland",
+     "size": 4
+    },
+    {
+     "name": "SMG",
+     "size": 4
+    },
+    {
+     "name": "cytoskeleton",
+     "size": 3
+    },
+    {
+     "name": "basement membrane",
+     "size": 2
+    },
+    {
+     "name": "contractility",
+     "size": 2
+    },
+    {
+     "name": "embryo",
+     "size": 2
+    },
+    {
+     "name": "actomyosin",
+     "size": 2
+    },
+    {
+     "name": "FGF10",
+     "size": 2
+    },
+    {
+     "name": "time-lapse",
+     "size": 2
+    }
+   ]
+  },
+  {
+   "name": "cell proliferation",
+   "children": [
+    {
+     "name": "β cells",
+     "size": 2
+    },
+    {
+     "name": "cyclin D1",
+     "size": 1
+    },
+    {
+     "name": "10A",
+     "size": 1
+    },
+    {
+     "name": "force",
+     "size": 1
+    },
+    {
+     "name": "regenerative medicine",
+     "size": 1
+    },
+    {
+     "name": "reservoir",
+     "size": 1
+    },
+    {
+     "name": "small molecule",
+     "size": 1
+    },
+    {
+     "name": "colony",
+     "size": 1
+    },
+    {
+     "name": "paradigm shift",
+     "size": 1
+    },
+    {
+     "name": "parasites",
+     "size": 1
+    }
+   ]
+  }
+ ]
+}
